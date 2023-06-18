@@ -11,6 +11,11 @@ header {
     padding-top: 200px;
     text-align: center; /* Center the content horizontally */
 }
+@media (max-width: 480px) {
+  header {
+    padding-top: 150px;
+}
+}
 
 h1.neochampy-title {
     font-size: 50px;
@@ -20,9 +25,10 @@ h1.neochampy-title {
     /* Media query for mobile devices */
     @media (max-width: 480px) {
       h1.neochampy-title {
-        font-size: 22px;
+        font-size: 40px;
+        letter-spacing: 1px;
         text-align: center;
-        margin-bottom: 50px;
+        margin-bottom: 25px;
     }
   }
 
@@ -113,6 +119,18 @@ p.description {
     margin-bottom: 40px;
 }
 
+@media (max-width: 480px) {
+  p.description {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-top: 40px;
+    
+}
+}
+
 footer {
     background-color: #3E5DD2;
     padding: 20px;
@@ -149,6 +167,13 @@ footer {
     transition: transform 0.3s ease-in-out;
     position: relative;
     animation: pulse 2s infinite;
+}
+
+@media (max-width: 480px) {
+  .socials a {
+    width: 100px;
+    margin: 6px;
+}
 }
 
 @keyframes pulse {
