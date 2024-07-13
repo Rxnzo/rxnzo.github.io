@@ -202,17 +202,11 @@ footer {
     object-fit: contain;
 }
 
-.social-content {
-    display: none;
+.page-content {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
 }
 
-p.portfolio,
-p.construction {
-    translate: translateY(-100%);
-    opacity: 0;
-}
-
-p.portfolio,
-p.construction {
-    animation: slideIn 1s ease-in-out forwards;
+.page-content.fade-out {
+  opacity: 0;
 }
